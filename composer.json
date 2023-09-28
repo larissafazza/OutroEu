@@ -1,0 +1,15 @@
+{
+    "name": "larissa/outro-eu",
+    "autoload": {
+        "psr-4": {
+            "Larissa\\OutroEu\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Larissa",
+            "email": "73025368+larissafazza@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
