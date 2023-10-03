@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
+
+// Route::get('/', function () {
+//     return view('auth.login');
+// });
+
+// Route::resource('todos', TodoController::class)
+//     ->middleware('auth');
+
+// Route::put('todos/{id}/mark-as-done', [TodoController::class, 'markAsDone'])
+//     ->name('todos.markAsDone')
+//     ->middleware('auth');
+
+// Auth::routes();
+
+Route::get('/', [HomeController::class, 'index'])
+    ->name('home');
+// ->middleware('auth');
