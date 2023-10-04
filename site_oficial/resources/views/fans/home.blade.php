@@ -20,6 +20,7 @@
             <li><a href="#o-duo">O DUO</a></li>
             <li><a href="#shows">SHOWS</a></li>
             <li><a href="#contato">CONTATO</a></li>
+            <li><a href="https://heartmerch.com.br/loja/outroeu/" target="_blank">LOJA</a></li>
         </ul>
     </div>
     <!-- <div class="bottom-sign">
@@ -28,14 +29,15 @@
 </div>
 <div id="musica" class="musica">
     <h1 class="title">MÚSICAS</h1>
-    <hr class="divisoria">
+    <hr class="divisoria-black">
     <div class="iframe-container">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3gZAVWMzKOt1tVO4tHoGwo?utm_source=generator" width="72%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 </div>
 <div id="videos" class="videos">
     <h1 class="title">VÍDEOS</h1>     
-    <hr class="divisoria"> 
+    <hr class="divisoria">
+    
 </div>
 <div id="o-duo" class="sobre">
     <h1 class="title">SOBRE O DUO</h1>
@@ -116,9 +118,35 @@
     <hr class="divisoria-white">
     <div class="eventos">
         <div class="evento">
-            <div class="data"></div>
-            <div class="local">
-                Local do Evento
+            <div class="data">
+                <div class="data-content">
+                    <h2>28</h2>
+                    <p>outubro</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="detail-info">
+                    <h2>OUTRO EU VOZ E VIOLÃO NO BONA</h2>
+                    <p>Sábado, às 21h</p>
+                    <p id="local"><i class="fa-solid fa-location-dot"></i>SÃO PAULO | BONA CASA DE MÚSICA</p>
+                </div>
+                <a href="https://www.eventim.com.br/event/outroeu-voz-e-violao-no-bona-bona-casa-de-musica-17524274/?affiliate=DEZ" class="button" target="_blank">Ingressos</a>
+            </div>
+        </div>
+        <div class="evento">
+            <div class="data">
+                <div class="data-content">
+                    <h2>28</h2>
+                    <p>outubro</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="detail-info">
+                    <h2>OUTROEU VOZ E VIOLÃO NO BONA - SESSÃO EXTRA!</h2>
+                    <p>Sábado, às 18h</p>
+                    <p id="local"><i class="fa-solid fa-location-dot"></i>SÃO PAULO | BONA CASA DE MÚSICA</p>
+                </div>
+                <a href="https://www.eventim.com.br/event/outroeu-voz-e-violao-no-bona-bona-casa-de-musica-17587613/?affiliate=DEZ" class="button" target="_blank">Ingressos</a>
             </div>
         </div>
     </div>
