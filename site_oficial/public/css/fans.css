@@ -9,21 +9,27 @@
 }
 
 .navbar-links a{
-    color:#5b6464;
+    color: black;
     font-size: 24px;
 }
 
 .navbar-links a:hover{
-    color:#a7b3b3;
+    color:#39657a;
 }
 
 .duo-name{
     float:left;
-    margin-left: 50px;
+    margin-left: 20px;
     font-weight:lighter;
-    color:#5b6464;
+    color:black;
     font-size: 72px;
     margin-top: -16px;
+}
+.duo-name img{
+    width: 100%;
+    height: auto;
+    /* margin-right: 20px;
+    margin-left: 20px;  */
 }
 
 .navbar-list {
@@ -44,23 +50,24 @@
 
 .navbar-list li a {
     text-decoration: none; 
-    color: #5b6464;
+    color: black;
     font-weight: lighter;
     font-size: 21px;
 }
 
 .navbar-list a:hover {
     text-decoration: underline;
-    color: #5b6464;
+    color: #39657a;
 }
 
 .initial-content {
     background-image: url('../images/oebg.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 100vh;
+    overflow: hidden;
     opacity: 95%;
-    padding-bottom: 90px;
+    /* padding-bottom:  90px; */
 }
 
 .initial-content::after {
@@ -106,12 +113,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 72px;
-    padding-bottom: 72px;
+    padding-bottom: 40px;
 }
 
 .musica{
-    background-color: #bac2c2;
+    background-color: #3f474e; 
+}
+
+.musica h1{
+    color:white;
+}
+
+.albuns {
+    width: 60%;
+    display: flex;
+    justify-content: space-around; /* Adicione espaço entre as imagens */
+    align-items: center; /* Centralize verticalmente */
+    margin: 0 auto; /* Centralize horizontalmente */
+    /* flex:1; */
+    padding-bottom: 60px;
+}
+
+.albuns img {
+    width: 180px;
+    height: auto;
+}
+
+.albuns img:hover {
+    opacity: 70%;
+    cursor: pointer;
 }
 
 .sobre {
@@ -119,14 +149,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh; 
-    opacity: 100%;
-    padding-bottom: 90px;
+    /* height: auto; */
+    height: 100vh;
+    /* padding-bottom: 90px; */
 }
 
 .slider{
-    margin-top: 80px;
-    margin-left: 120px;
+    margin-top: 50px;
+    margin-left: 100px;
     width: 500px;
     height: 300px;
     overflow: hidden;
@@ -225,7 +255,11 @@
 }
 
 .agenda {
-    background-color: #5b6464;
+    background-color: #292930;
+    /* background-image: url('../images/show2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
     padding-bottom: 70px;
     min-height: 100vh;
 }
@@ -257,10 +291,11 @@
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:end;
     padding: 0 10px;
     margin: 0 auto;
     margin-top: 20px;
+    opacity: 75%;
 }
 
 .evento:hover{
@@ -345,12 +380,17 @@
 }
 
 .contato{
-    background-image: url('../images/contato.jpg');
+    background-image: url('../images/show.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 650px;
-    opacity: 90%;
-    padding-bottom: 90px;
+    /* opacity: 90%; */
+    padding-bottom: 150px;
+    /* margin-bottom: 100px; */
+}
+
+.contato h1{
+    color:white;
 }
 
 .contatos{
@@ -360,7 +400,7 @@
 
 .contatos a{
     text-decoration: none;
-    color:black;
+    color:white;
 }
 
 .footer {
@@ -374,12 +414,13 @@
 .footer img {
     width: 7%;
     height: auto;
-    margin-right: 40px; 
+    margin-right: 20px;
+    margin-left: 20px; 
 }
 
 .footer a {
     flex-grow: 1; 
-    color: rgb(156, 156, 158); 
+    color: #9c9c9e; 
     text-decoration: none; 
 }
 
