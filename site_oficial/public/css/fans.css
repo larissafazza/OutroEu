@@ -18,12 +18,16 @@
 }
 
 .duo-name{
+    font-family: 'Lato', sans-serif;
     float:left;
-    margin-left: 20px;
-    font-weight:lighter;
+    margin-left: 36px;
+    font-weight:500;
     color:black;
-    font-size: 72px;
-    margin-top: -16px;
+    font-size:48px;
+    font-style: inherit;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    /* margin-top: -16px; */
 }
 .duo-name img{
     width: 100%;
@@ -130,18 +134,31 @@
     justify-content: space-around; /* Adicione espaço entre as imagens */
     align-items: center; /* Centralize verticalmente */
     margin: 0 auto; /* Centralize horizontalmente */
-    /* flex:1; */
     padding-bottom: 60px;
 }
 
-.albuns img {
+.album {
+    position: relative;
+    text-align: center;
+}
+
+.album img {
     width: 180px;
     height: auto;
 }
 
-.albuns img:hover {
-    opacity: 70%;
+.album img:hover {
+    opacity: 50%;
     cursor: pointer;
+}
+
+.album-text {
+    color:black;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 .sobre {
@@ -255,7 +272,7 @@
 }
 
 .agenda {
-    background-color: #292930;
+    background-color: black;
     /* background-image: url('../images/show2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -275,7 +292,7 @@
 .eventos .button{
     text-decoration: none;
     color:antiquewhite;
-    background-color: #39657a;
+    background-color: #215d79;
     border-radius: 10px;
     line-height: 30px;
     padding: 5px 20px 5px 20px;
@@ -288,14 +305,14 @@
 .evento {
     width: 50%;
     height: 80px;
-    background-color: black;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content:end;
     padding: 0 10px;
     margin: 0 auto;
     margin-top: 20px;
-    opacity: 75%;
+    /* opacity: 75%; */
 }
 
 .evento:hover{
@@ -305,11 +322,11 @@
 .data {
     width: 70px;
     height: 70px;
-    background-color: #333535;
+    background-color: #2d2e2e;
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: antiquewhite!important;
+    color: white!important;
 }
 
 .data-content {
@@ -328,8 +345,8 @@
 
 .info {
     flex-grow: 1;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -349,6 +366,7 @@
     padding-top: 8px;
     padding-bottom: 7px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .detail-info p{
@@ -383,9 +401,9 @@
     background-image: url('../images/show.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 720px;
     /* opacity: 90%; */
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
     /* margin-bottom: 100px; */
 }
 

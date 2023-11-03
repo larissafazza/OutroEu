@@ -13,11 +13,11 @@
         <li><a href="https://www.tiktok.com/@outroeu" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
         <li><a href="https://twitter.com/outroeuoficial?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
         <li><a href="https://www.facebook.com/OutroEuOficial/?locale=pt_BR" target="_blank"><i class=?fa-brands
-                    fa-facebook"></i></a></li> </ul> <h1 class="duo-name"><img src="{{ asset('images/title.png') }}"
-                    alt="OutroEu"></h1> <ul class="navbar-list"> <li><a href="#musica">MÚSICAS</a></li>
-        <!-- <li><a href="#videos">VÍDEOS</a></li> -->
-        <li><a href="#o-duo">O DUO</a></li>
-        <li><a href="#shows">SHOWS</a></li>
+                    fa-facebook"></i></a></li> </ul> <h1 class="duo-name">{{(' OUTRO EU ')}}</h1> <ul
+                    class="navbar-list"> <li><a href="#musica">MÚSICAS</a></li> <!-- <li><a href="#videos">VÍDEOS</a>
+                    </li> -->
+                    <li><a href="#o-duo">O DUO</a></li>
+                    <li><a href="#shows">SHOWS</a></li>
         <li><a href="#contato">CONTATO</a></li>
         <li><a href="https://heartmerch.com.br/loja/outroeu/" target="_blank">LOJA</a></li>
         </ul>
@@ -28,17 +28,28 @@
     <h1 class="title">MÚSICAS</h1>
     <hr class="divisoria-white">
     <div class="iframe-container" id="music-container">
-        <iframe style="border-radius:12px"
+        <iframe id="spotify-iframe" style="border-radius:12px"
             src="https://open.spotify.com/embed/artist/3gZAVWMzKOt1tVO4tHoGwo?utm_source=generator&theme=0" width="60%"
             height="450" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
         </iframe>
     </div>
     <div class="albuns">
-        <img id="album1" src="{{ asset('images/album1.jpg') }}" alt="Outro Eu">
-        <img id="album2" src="{{ asset('images/album2.jpg') }}" alt="O Outro É Você">
-        <img id="album3" src="{{ asset('images/album3.jpg') }}" alt="A Mágica Por Trás da Forma">
-        <img id="thisisoutroeu" src="{{ asset('images/playlist.jpg') }}" alt="This is OutroEu">
+        <div class="album">
+            <img id="album1" src="{{ asset('images/album1.jpg') }}" alt="Outro Eu" onclick="changePlayer('album1')">
+        </div>
+        <div class="album">
+            <img id="album2" src="{{ asset('images/album2.jpg') }}" alt="O Outro É Você"
+                onclick="changePlayer('album2')">
+        </div>
+        <div class="album">
+            <img id="album3" src="{{ asset('images/album3.jpg') }}" alt="A Mágica Por Trás da Forma"
+                onclick="changePlayer('album3')">
+        </div>
+        <div class="album">
+            <img id="thisisoutroeu" src="{{ asset('images/playlist.jpg') }}" alt="This is OutroEu"
+                onclick="changePlayer('thisisoutroeu')">
+        </div>
     </div>
 </div>
 
@@ -67,9 +78,10 @@
                     Depois disso, lançaram seu primeiro álbum:<br>
                     “OutroEu”, e já começaram com música em<br>
                     trilha sonora de novela, a música “Ai de Mim”,<br>
-                    com a participação de Sandy, tocava nas telinhas<br>
-                    brasileiras na novela “O Outro Lado do Paraíso”,<br>
-                    e marcou a transição da banda para o duo.
+                    com a participação de Sandy, tocava nas<br>
+                    telinhas brasileiras na novela<br>
+                    “O Outro Lado do Paraíso”, e marcou<br>
+                    a transição da banda para o duo.
                 </p>
             </div>
             <div class="slide">
@@ -79,18 +91,19 @@
                     turnê pelo Brasil... Depois disso, surgiram<br>
                     novas colaborações, como a música “Outrória”,<br>
                     em parceria com o duo ANAVITÓRIA, e então<br>
-                    assinaram seu contrato com a Universal Music Brasil.
+                    assinaram seu contrato com a<br>
+                    Universal Music Brasil.
                 </p>
             </div>
             <div class="slide">
                 <p>
                     À medida que lançavam novos singles,<br>
                     OUTROEU reforçava sua habilidade em criar<br>
-                    músicas bonitas e cativantes. Suas características<br>
-                    musicais, que mesclam Folk e Folk Rock com<br>
-                    elementos de pop e MPB, são enraizadas em <br>
-                    influências que vão de Maria Gadú a Ed Sheeran,<br>
-                    passando por Coldplay e Los Hermanos.
+                    músicas bonitas e cativantes. Suas<br>
+                    características musicais mesclam Folk e<br>
+                    Folk Rock com elementos de pop e MPB e são<br>
+                    enraizadas em influências que vão de Maria Gadú<br>
+                    a Ed Sheeran, passando por Coldplay e Los Hermanos.
                 </p>
             </div>
             <div class="slide">
@@ -180,7 +193,7 @@
     <span><a href="https://www.universalmusic.com.br/artista/outroeu/"
             target="_blank">https://www.universalmusic.com.br/artista/outroeu</a></span>
     <span style="font-size:13px;" class="wixui-rich-text__text">&nbsp;© 2020 OUTROEU PRODUCOES MUSICAIS</span>
-    <span style="font-size:13px;" class="wixui-rich-text__text"> Developed by Larissa Fazza - VINCENZO SOLUÇÕES</span>
+    <span style="font-size:13px;" class="wixui-rich-text__text"> Developed by Larissa Fazza</span>
 </div>
 
 @endsection
